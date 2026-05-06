@@ -1,0 +1,308 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+  color: #1d3557;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #1d3557;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: #333;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  background-color: #ffffff;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #e63946;
+}
+
+.nav a {
+  margin-left: 2rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #e63946;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  background-image: url('hero.png');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 0 1rem;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hero-content p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  color: #f0f0f0;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background-color: #e63946;
+  color: #ffffff;
+}
+
+.btn.primary:hover {
+  background-color: #d62828;
+}
+
+.btn.secondary {
+  background-color: #1d3557;
+  color: #ffffff;
+}
+
+.btn.secondary:hover {
+  background-color: #0f2a49;
+}
+
+.btn i {
+  margin-right: 0.5rem;
+}
+
+/* Sections */
+section {
+  padding: 4rem 0;
+}
+
+.split {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.split.reverse {
+  flex-direction: row-reverse;
+}
+
+.split .text {
+  flex: 1 1 50%;
+}
+
+.split .image {
+  flex: 1 1 50%;
+  text-align: center;
+}
+
+.split .image img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about .note {
+  font-size: 0.9rem;
+  color: #555;
+  background-color: #fff3cd;
+  border-left: 4px solid #e63946;
+  padding: 0.75rem;
+  border-radius: 4px;
+}
+
+.buy, .sell {
+  background-color: #ffffff;
+}
+
+/* Contact */
+.contact {
+  background-color: #f1faee;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 0.5rem;
+  color: #1d3557;
+}
+
+.contact p {
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  color: #333;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.contact-form .form-group {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form .form-group.full {
+  flex: 1 1 100%;
+}
+
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: #1d3557;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #e63946;
+}
+
+/* Footer */
+.footer {
+  background-color: #1d3557;
+  color: #f1faee;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.footer p {
+  margin-bottom: 0.5rem;
+  color: #f1faee;
+}
+
+.footer .footnote {
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav a {
+    margin-left: 1rem;
+  }
+  .hero {
+    height: 70vh;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .split .text,
+  .split .image {
+    flex: 1 1 100%;
+  }
+  .cta-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
