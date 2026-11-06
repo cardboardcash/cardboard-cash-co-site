@@ -258,6 +258,13 @@ section {
   justify-content: center;
 }
 
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
 .social-icons a {
   font-size: 1.5rem;
   color: #1d3557;
@@ -280,6 +287,8 @@ section {
   margin-bottom: 0.5rem;
   color: #f1faee;
 }
+
+.footer a { color: inherit; }
 
 .footer .footnote {
   font-size: 0.75rem;
